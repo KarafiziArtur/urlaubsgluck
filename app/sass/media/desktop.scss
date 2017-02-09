@@ -1,0 +1,88 @@
+@import "../global/variables";
+
+@media only screen and (min-width : $desktop) {
+
+  /*****
+  Global
+  *****/
+
+  .container {
+    flex-flow: row wrap;
+    max-width: 940px;
+  }
+
+  /*******
+  Headings
+  *******/
+
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  /***********
+  Promo header
+  ***********/
+
+  .promo {
+    &__nav {
+      justify-content: space-between;
+      margin-bottom: 135px;
+    }
+  }
+
+  /************
+   How it works
+  ************/
+
+  .slider {
+    &__next {
+      top: 145px;
+    }
+    &__prev {
+      top: 145px;
+    }
+  }
+
+  /*******
+  Partners
+  *******/
+
+  .partners {
+    max-width: 100%;
+    margin: 0 auto 95px;
+    .container {
+      flex-flow: row wrap;
+    }
+  }
+  .partner {
+    flex: 1;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 35px;
+    }
+  }
+
+  /*****
+  Footer
+  *****/
+
+  .footer {
+    &__nav {
+      flex: 2;
+      width: 100px;
+    }
+    &__copyright-wrapper {
+      margin: 0 0 0 auto;
+    }
+    &__copyright {
+      flex: 7;
+    }
+  }
+  .text-logo {
+    &--footer {
+      flex: 3;
+      text-align: left;
+    }
+  }
+
+}

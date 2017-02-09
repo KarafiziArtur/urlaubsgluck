@@ -1,0 +1,44 @@
+@import "../../global/variables.scss";
+
+.call-to-action {
+  &__title {
+    margin: 0 0 14px;
+    padding: 0;
+
+    color: $text-color-light;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    width: 220px;
+    margin: 0 auto 15px;
+    padding: 0;
+
+    color: $text-color-light;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.btn {
+  &--call-to-action {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 50px;
+
+    background: $accent-color;
+    border: none;
+
+    color: $text-color-light;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover {
+      background: $main-color;
+      color: $accent-color;
+    }
+  }
+}

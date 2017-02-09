@@ -1,0 +1,29 @@
+@import "variables";
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: $main-color;
+  line-height: normal;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  transition: all 0.3s ease-in;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  max-width: 480px;
+  margin: 0 auto;
+}

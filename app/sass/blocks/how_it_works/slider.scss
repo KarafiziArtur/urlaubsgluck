@@ -1,0 +1,63 @@
+@import "../../global/variables";
+
+.slider {
+  flex: 1;
+  margin: 0 10px 10px;
+  height: 40vw;
+  min-height: 240px;
+  position: relative;
+
+  color: #fff;
+
+  border-radius: .3em;
+  overflow: hidden;
+  background: no-repeat center/cover;
+  &__info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  }
+  &__step {
+    margin: 0 20px 15px;
+    padding: 5px 0;
+    width: 70px;
+
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: $accent-color;
+    border-radius: 10px;
+  }
+  &__title {
+    margin: 0 20px 15px;
+    padding: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__text {
+    margin: 0 20px 20px;
+
+    color: #ccc;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__next {
+    display: none;
+  }
+  &__prev {
+    display: none;
+  }
+}

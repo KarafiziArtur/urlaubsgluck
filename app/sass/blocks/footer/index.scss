@@ -1,0 +1,29 @@
+@import "../../global/variables";
+@import "nav";
+@import "copyright";
+
+.footer {
+  margin-bottom: 20px;
+  padding-top: 15px;
+
+  text-align: center;
+
+  border-top: 4px solid $accent-color;
+  &__nav {
+    margin-bottom: 15px;
+  }
+  &__copyright-wrapper {
+    width: 110px;
+    margin: 0 auto;
+  }
+}
+
+.text-logo {
+  &--footer {
+    margin: 0 0 15px;
+
+    color: $accent-color;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

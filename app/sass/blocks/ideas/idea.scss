@@ -1,0 +1,50 @@
+@import "../../global/variables";
+
+.idea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 5px 10px;
+  min-height: 120px;
+  position: relative;
+
+  text-align: center;
+
+  background: no-repeat center center;
+  background-size: cover;
+  border-radius: 0.4em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  &__title {
+    padding: 0 10px;
+    position: absolute;
+    z-index: 2;
+
+    color: $text-color-light;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+.idea-1 {
+  background-image: url(../../../images/idea-1.jpg);
+}
+.idea-2 {
+  background-image: url(../../../images/idea-2.jpg);
+}
+.idea-3 {
+  background-image: url(../../../images/idea-3.jpg);
+}
+.idea-4 {
+  background-image: url(../../../images/idea-4.jpg);
+}
+.idea-5 {
+  background-image: url(../../../images/idea-5.jpg);
+}
+.idea-6 {
+  background-image: url(../../../images/idea-6.jpg);
+}
+.idea-7 {
+  background-image: url(../../../images/idea-7.jpg);
+}

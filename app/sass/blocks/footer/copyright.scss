@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  flex-flow: column nowrap;
+  &__text {
+    display: block;
+    margin-bottom: 10px;
+
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__logo {
+    margin: 0 auto;
+    width: 110px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "partner";
+@import "../../global/variables";
+
+.partners {
+  margin-bottom: 35px;
+  text-align: center;
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+.btn {
+  &--stroked-accent {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 70px;
+
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 700;
+
+    border-color: $accent-color;
+    &:hover {
+      color: $text-color-light;
+
+      background: $accent-color;
+    }
+  }
+}

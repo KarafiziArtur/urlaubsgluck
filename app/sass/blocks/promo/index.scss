@@ -1,0 +1,10 @@
+@import "nav";
+@import "call-to-action";
+
+.promo {
+  margin-bottom: 35px;
+  height: 540px;
+
+  background: url("../../../images/promo__bg--mobile.jpg") no-repeat center center;
+  background-size: cover;
+}

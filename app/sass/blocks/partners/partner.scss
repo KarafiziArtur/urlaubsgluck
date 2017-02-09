@@ -1,0 +1,55 @@
+@import "../../global/variables";
+@import "../../global/icon";
+
+.partner {
+  margin: 0 auto 25px;
+  width: 220px;
+
+  text-align: center;
+  &__img {
+    width: 120px;
+    margin: 0 auto 15px;
+    position: relative;
+    >img {
+      width: 120px;
+
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    border: 4px solid white;
+    border-radius: 50%;
+    box-sizing: content-box;
+    &--first {background-color: #ff4e50;}
+    &--second {background-color: #ffa507;}
+    &--third {background-color: #1cd7ad;}
+    &--fourth {background-color: #4e73db;}
+    i {
+      display: block;
+    }
+  }
+  &__name {
+    margin-bottom: 15px;
+
+    color: $text-color-dark;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &__info {
+    max-width: 235px;
+
+    color: #666;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

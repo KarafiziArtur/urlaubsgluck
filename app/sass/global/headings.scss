@@ -1,0 +1,11 @@
+@import "../global/variables";
+
+.section-title {
+  margin: 0 10px 15px;
+  padding: 0;
+
+  color: $text-color-dark;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
