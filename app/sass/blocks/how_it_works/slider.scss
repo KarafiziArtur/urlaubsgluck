@@ -12,6 +12,7 @@
   border-radius: .3em;
   overflow: hidden;
   background: no-repeat center/cover;
+  transition: all .5s ease-out;
   &__info {
     display: flex;
     flex-flow: column nowrap;
