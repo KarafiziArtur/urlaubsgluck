@@ -19,21 +19,21 @@ const sliders = [
     badge: 'Step 1',
     title: 'Sed leo enim, condimentum',
     text: 'Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.',
-    image: '/images/step-1.jpg'
+    image: 'images/step-1.jpg'
   },
   {
     id: 1,
     badge: 'Step 2',
     title: 'Morbi velit risus',
     text: 'Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.',
-    image: '/images/step-2.jpg'
+    image: 'images/step-2.jpg'
   },
   {
     id: 2,
     badge: 'Step 3',
     title: 'Sed leo enim, condimentum',
     text: 'Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.',
-    image: '/images/step-3.jpg'
+    image: 'images/step-3.jpg'
   }
 ];
 
