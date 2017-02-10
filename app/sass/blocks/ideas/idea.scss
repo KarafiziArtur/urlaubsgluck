@@ -11,8 +11,7 @@
 
   text-align: center;
 
-  background: no-repeat center center;
-  background-size: cover;
+  background: no-repeat center/cover;
   border-radius: 0.4em;
   cursor: pointer;
   overflow: hidden;
@@ -26,25 +25,4 @@
     font-size: 22px;
     font-weight: 700;
   }
-}
-.idea-1 {
-  background-image: url(../../../images/idea-1.jpg);
-}
-.idea-2 {
-  background-image: url(../../../images/idea-2.jpg);
-}
-.idea-3 {
-  background-image: url(../../../images/idea-3.jpg);
-}
-.idea-4 {
-  background-image: url(../../../images/idea-4.jpg);
-}
-.idea-5 {
-  background-image: url(../../../images/idea-5.jpg);
-}
-.idea-6 {
-  background-image: url(../../../images/idea-6.jpg);
-}
-.idea-7 {
-  background-image: url(../../../images/idea-7.jpg);
 }

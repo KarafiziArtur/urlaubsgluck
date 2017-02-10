@@ -17,7 +17,7 @@
         <header class="promo">
             <div class="container">
                 <nav class="promo__nav nav">
-                    <a href="#" class="text-logo text-logo--header">URLAUBSGLÜCK</a>
+                    <a href="#" class="text-logo text-logo--header" v-text="title"></a>
                     <div class="nav__auth">
                         <a href="#">Log in</a>
                         <a href="#" class="btn btn--stroked-light">Sign up</a>
@@ -112,27 +112,14 @@
         <section class="ideas">
             <h2 class="section-title">Discover holiday activity ideas</h2>
             <div class="container">
-                <div class="idea" style="background-image: url('images/idea-1.jpg')">
-                    <div class="idea__title">Sport and Activity</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-2.jpg')">
-                    <div class="idea__title">Wellnes and Health</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-3.jpg')">
-                    <div class="idea__title">Extreme Sports <br />and Expeditions</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-4.jpg')">
-                    <div class="idea__title">Games</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-5.jpg')">
-                    <div class="idea__title">Culture and Education</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-6.jpg')">
-                    <div class="idea__title">Relaxation</div>
-                </div>
-                <div class="idea" style="background-image: url('images/idea-7.jpg')">
-                    <div class="idea__title">Travelling</div>
-                </div>
+                <a v-for="idea in ideas"
+                   class="idea"
+                   v-bind:style="{ backgroundImage: 'url(' + idea.webformatURL + ')' }"
+                   v-bind:href="idea.pageURL"
+                   target="_blank"
+                >
+                    <div class="idea__title" v-text="idea.tags"></div>
+                </a>
             </div>
         </section>
         <!-- Ideas section end /-->
@@ -140,11 +127,11 @@
         <!-- Search section begin -->
         <section class="search">
             <h2 class="section-title">Discover holiday activity ideas</h2>
-            <form class="container">
+            <form class="container" @submit="onSearchIdea">
                 <p class="search__text">Hi! What are your holiday interests?</p>
                 <div class="search__input-wrapper">
-                    <input type="text" class="search__input" placeholder="Enter your interests" />
-                    <button type="submit" class="btn btn--search">Search partners</button>
+                    <input type="text" class="search__input" placeholder="Enter your interests" v-model="searchIdeaQuery" />
+                    <button type="submit" class="btn btn--search" @click="onSearchIdea">Search partners</button>
                 </div>
             </form>
         </section>
@@ -178,6 +165,7 @@
     </div>
 
     <!-- build:js ../app_build/_js/vendor.js -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <!-- endbuild -->
     <!-- build:js ../app_build/_js/app.js -->
     <script src="_js/app.js"></script>
